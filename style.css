@@ -5,10 +5,12 @@
 }
 
 header {
+    border-bottom: solid;
+    border-width: 2px;
     position: fixed;
     background-color: white;
     width: 100%;
-
+    height: 170px;
 
 }
 
@@ -28,18 +30,116 @@ header {
 
 }
 
-.menu-icon {
+
+.search {
+    border: solid;
+    min-width: 500px;
+    background-color: black;
+    width: 500px;
+    margin: 0% 0% 0% 18%;
+    height: 50px;
+    border-radius: 80px;
     cursor: pointer;
-    width: 35px;
-    margin: 30px;
+    position: static;
+    align-items: center;
+    left: 20%;
+    text-decoration: none;
+    /* figure out to use these */
+    text-align: center;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: stretch;
+
 }
 
+.search a {
+    text-decoration: none;
+    display: inline-block;
+    top: 120px;
+    width: 31%;
+    margin-top: 3%;
+    position: flex;
+    color: white;
+}
+
+
+
+.search h4:hover {
+    color: red;
+}
+
+header .filters {
+    display: inline;
+    width: 20%;
+    top: 115px;
+    left: 65px;
+    position: absolute;
+}
+
+
+.filter-button {
+    border: solid;
+    text-align: center;
+    border-radius: 12px;
+    top: 8px;
+    padding: 1%;
+    margin-right: 2px;
+    position: absolute;
+    max-width: 80px;
+}
+
+.location-filter {
+    border: solid;
+    text-align: center;
+    border-radius: 12px;
+    position: absolute;
+    padding: 1%;
+    top: 8px;
+    left: 200px;
+    width: 200px;
+    max-width: 80px;
+}
+
+.popular-filter {
+    display: inline;
+    border: solid;
+    text-align: center;
+    border-radius: 12px;
+    position: absolute;
+    padding: 1%;
+    top: 8px;
+    left: 300px;
+    max-width: 200px;
+}
+
+.bedbath-filter {
+    display: inline;
+    border: solid;
+    text-align: center;
+    border-radius: 12px;
+    position: absolute;
+    padding: 1%;
+    top: 8px;
+    left: 445px;
+    width: 100px;
+    max-width: 200px;
+}
+
+.ammenities-filter {
+    border: solid;
+    text-align: center;
+    border-radius: 12px;
+    position: absolute;
+    padding: 1%;
+    top: 8px;
+    left: 77px;
+    max-width: 110px;
+}
 
 nav {
     flex: 1;
     text-align: right;
     min-width: 532px;
-    margin-right: 80px;
     overflow: hidden;
 }
 
@@ -60,26 +160,19 @@ nav ul li a:hover {
     color: red;
 }
 
-
-.listings {
-    height: 1800px;
-    width: 47%;
-    float: left;
-    margin: 4% 0% 0% 2%;
-
+.menu-icon {
+    cursor: pointer;
+    width: 35px;
+    margin: 30px;
 }
 
-.map {
-    border: solid;
-    height: 2400px;
-    width: 50%;
-    align-items: right;
-    float: right;
-}
 
-.posts {
+.posts div {
+    max-height: 320px;
+    min-height: 320px;
     margin: 1%;
     float: left;
+    background-color: black;
     width: 47%;
     align-items: center;
     max-width: 650px;
@@ -87,21 +180,88 @@ nav ul li a:hover {
     height: 20%;
     border: solid;
     border-width: 2px;
+    overflow: hidden;
     border-radius: 12px;
 }
 
-.posts img {
+.posts div img {
     max-height: 100%;
     max-width: 100%;
     border-radius: 12px;
     align-items: center;
 }
 
-.posts:hover {
+.posts div:hover {
     box-shadow: 2px 2px 10px grey;
+    transform: translateY(50%);
 }
 
-.posts:active {
+.posts div:active {
     color: black;
     box-shadow: 2px 2px 20px 3px;
+}
+
+.dropdown .dropdown2 {
+    display: inline-block;
+}
+
+.dropdown:hover .dropdown-content {
+    top: 67px;
+    right: 160px;
+    border: solid;
+    cursor: pointer;
+    text-align: left;
+    position: absolute;
+    display: inline-block;
+    padding: 8px;
+    border-radius: 12px;
+}
+
+
+.dropdown2:hover .dropdown-content {
+    top: 67px;
+    right: 110px;
+    border: solid;
+    cursor: pointer;
+    text-align: left;
+    position: absolute;
+    display: inline-block;
+    padding: 8px;
+    border-radius: 12px;
+}
+
+.dropdown-content {
+    display: none;
+}
+
+
+.dropdown-content a {
+    display: block;
+    padding: 8px;
+    color: black;
+}
+
+.listings {
+    top: 250px;
+    height: 1800px;
+    width: 47%;
+    float: left;
+    margin: 6.5% 0% 0% 2%;
+    position: static;
+}
+
+
+.map {
+    border: solid;
+    height: 2500px;
+    width: 48%;
+    top: 170px;
+    left: 1450px;
+    position: fixed;
+    align-items: right;
+    float: right;
+}
+
+.map img {
+    height: 1301px;
 }

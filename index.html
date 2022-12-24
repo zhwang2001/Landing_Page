@@ -9,32 +9,72 @@
 
 <body>
     <header>
-        <div class="navbar">
+        <div class="navbar"> <!-- service and language are drop down menus -->
             <img src="assets/logo.ico" alt="Zoned Logo" class="logo">
+            <div class="search">
+                <a href="" id="location">
+                    <h4>Location</h3>
+                </a>
+                <a href="" id="reservation">
+                    <h4>Reservation Date</h3>
+                </a>
+                <a href="" id="roomates">
+                    <h4>Roomates</h3>
+                </a>
+            </div>
             <nav>
                 <ul>
-                    <li><a href="">Short Term Rentals</a></li>
-                    <li><a href="">Long Term Rentals</a></li>
-                    <li><a href="">Services</a></li>
-                    <li><a href="">About Us</li>
+                    <li><a href="">Short Term</a></li>
+                    <li><a href="">Long Term</a></li>
+                    <li><a href="">Post a listing</a></li>
+                    <li><a href="">Store</a></li>
+                    <li class="dropdown">
+                        Services
+                        <div class="dropdown-content">
+                            <a href="#">Advertise</a>
+                            <a href="#">Property Management</a>
+                            <a href="#">Tenant Applications</a>
+                        </div>
+                    </li>
+                    <li class="dropdown2">
+                        Language
+                        <div class="dropdown-content">
+                            <a href="#">English</a>
+                            <a href="#">French</a>
+                            <a href="#">Chinese</a>
+                        </div>
+                    </li>
                 </ul>
             </nav>
             <img src="assets/menu.ico" alt="Zoned Logo" class="menu-icon">
         </div>
+        <div class="filters">
+            <h3 class="filter-button">Filters</h3>
+            <h3 class="location-filter">location</h3>
+            <h3 class="popular-filter">popular filters</h3>
+            <h3 class="bedbath-filter">bed & bath</h3>
+            <h3 class="ammenities-filter">ammenities</h3>
+        </div>
     </header>
     <main>
         <section class="listings">
-            <div class="posts"><a href=""><img src="assets/living-room.jpg" alt="home"></a></div>
-            <div class="posts"><a href=""><img src="assets/mansion.jpg" alt="home"></a></div>
-            <div class="posts"><a href=""><img src="assets/sauna.jpg" alt="home"></a></div>
-            <div class="posts"><a href=""><img src="assets/main_image_home.png" alt="home"></a></div>
-            <div class="posts"><a href=""><img src="assets/main_image_home.png" alt="home"></a></div>
-            <div class="posts"><a href=""><img src="assets/main_image_home.png" alt="home"></a></div>
+            <div class="posts"> <!--currently has placeholder images-->
+                <div><a href=""><img src="assets/living-room.jpg" alt="home"></a></div>
+                <div><a href=""><img src="assets/mansion.jpg" alt="home"></a></div>
+                <div><a href=""><img src="assets/sauna.jpg" alt="home"></a></div>
+                <div><a href=""><img src="assets/house1.jpg" alt="home"></a></div>
+                <div><a href=""><img src="assets/room1.jpg" alt="home"></a></div>
+                <div><a href=""><img src="assets/room4.jpg" alt="home"></a></div>
+                <div><a href=""><img src="assets/room5.jpg" alt="home"></a></div>
+                <div><a href=""><img src="assets/room2.jpg" alt="home"></a></div>
+                <div><a href=""><img src="assets/room6.jpg" alt="home"></a></div>
+                <div><a href=""><img src="assets/room9.jpg" alt="home"></a></div>
+            </div>
         </section>
 
         <section class="map">
             <a href="">
-                <img src="assets/main_image_home.png" alt="find a location using our map">
+                <img src="assets/map2.png" alt="find a location using our map">
             </a>
         </section>
     </main>
